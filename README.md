@@ -2,15 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-33-47848F?logo=electron&logoColor=white)
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-1.48-2EAD33?logo=playwright&logoColor=white)
 
-**TypeScript + Electron + React + Playwright 기반으로 제작된 설치형 데스크톱 블로그 자동화 스튜디오**입니다.
-유료 종량제 API 키 없이도 사용자가 구독 중인 **ChatGPT Plus, Claude Pro, Google Gemini Pro, Perplexity Pro, DeepSeek** 웹 브라우저 세션을 그대로 연결해 고조회수 블로그 원고를 생성하고, **네이버 블로그 · 티스토리 · 워드프레스 · 벨로그 · 미디엄 · Ghost · GitHub Pages**까지 통합 관리합니다.
+유료 종량제 API 키 없이도 사용자가 구독 중인 **ChatGPT Plus, Claude Pro, Google Gemini Pro, Perplexity Pro, DeepSeek** 웹 세션이나 로컬 AI CLI를 연결해 블로그 원고를 생성하고, **네이버 블로그 · 티스토리 · 워드프레스 · 벨로그 · 미디엄 · Ghost · GitHub Pages**까지 한 번에 관리하는 **로컬 데스크톱 블로그 자동화 스튜디오**입니다.
 
-> **English Summary:** BlogStater Omni Studio is a **100% local-first** TypeScript, Electron, React, and Playwright desktop application for multi-platform blog authoring, keyword scouting, SEO scoring, thumbnail generation, and publishing across Naver Blog, Tistory, WordPress, Velog, Medium, Ghost, and GitHub Pages — using your own local AI CLIs or web AI subscriptions without any pay-per-token API key.
+> **English Summary:** BlogStater Omni Studio is a **100% local-first** desktop app for multi-platform blog authoring, keyword scouting, SEO scoring, thumbnail generation, and publishing across Naver Blog, Tistory, WordPress, Velog, Medium, Ghost, and GitHub Pages — using your own local AI CLIs or web AI subscriptions without any pay-per-token API key.
 
 ---
 
