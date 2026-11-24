@@ -1,9 +1,10 @@
 # BlogStater Omni Studio (올인원 멀티 블로그 자동화 데스크톱)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-![Platform: Windows 10/11](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?logo=windows&logoColor=white)
+![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-33-47848F?logo=electron&logoColor=white)
-![React + TypeScript](https://img.shields.io/badge/React%20%2B%20TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-1.48-2EAD33?logo=playwright&logoColor=white)
 
 **Python을 일절 사용하지 않고 100% TypeScript + Electron + React + Playwright 기반으로 제작된 설치형 데스크톱 블로그 자동화 스튜디오**입니다.
