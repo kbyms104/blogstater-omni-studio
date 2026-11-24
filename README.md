@@ -71,6 +71,23 @@ npm install
 npm start
 ```
 
+### 🌐 블로그 자동 발행 엔진 (Aside 권장 / Playwright 대안)
+
+- **기본 권장 엔진 — Aside 브라우저** ([aside.com](https://aside.com)):
+  - 기본 설정(`browserAutomationEngine = 'aside'`)은 PC에 설치된 **Aside 브라우저 및 Aside CLI(`aside.exe`)** 를 통해 이미 로그인된 세션을 그대로 활용하여 네이버 블로그·티스토리 등에 자동 발행합니다.
+  - 자동 로그인 연동·발행 기능에서 가장 안정적으로 동작하므로 `Aside` 설치를 권장합니다.
+- **미설치 시 대안 — 내장 브라우저 (`Playwright`)**:
+  - `Aside` 설치는 필수가 아닙니다. 설치되어 있지 않다면 앱 내 설정에서 자동화 엔진을 **내장 브라우저(`Playwright`)** 로 전환하거나 자동 폴백으로 사용할 수 있습니다.
+  - Windows에 설치된 Chrome 또는 Microsoft Edge를 자동으로 감지해 실행하며, 두 브라우저가 모두 없는 환경이라면 아래 명령어로 Chromium을 설치하세요:
+    ```bash
+    npx playwright install chromium
+    ```
+
+### 🤖 AI 원고 생성 연동 옵션 (선택 사항)
+
+- **로컬 AI CLI 연동**: PC에 `agy` (Google Antigravity CLI), `codex`, `claude`, `gh`, `Ollama` 등이 설치되어 있으면 별도 API 키 입력 없이 바로 연결해 원고를 생성할 수 있습니다.
+- **구독형 웹 AI 브라우저 세션**: 위 CLI를 설치하지 않았더라도 앱 내 전용 브라우저 창에서 **ChatGPT Plus, Claude Pro, Google Gemini Pro, Perplexity Pro, DeepSeek** 웹 계정에 한 번 로그인하면 동일하게 원고를 생성할 수 있으며, 미연결 시에도 내장 하이브리드 엔진으로 초안 생성이 가능합니다.
+
 ---
 
 ## ⚠️ 주의사항 및 면책 조항 (Disclaimer)
