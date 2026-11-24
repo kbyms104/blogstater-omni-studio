@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build & release artifacts
+dist/
+dist-electron/
+release/
+*.exe
+*.dmg
+*.AppImage
+*.msi
+
+# Local browser profiles & test artifacts (may contain cookies/sessions)
+.test-google-profile/
+.test-multi-instance/
+.test-*/
+
+# Generated blog export packages
+exports/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

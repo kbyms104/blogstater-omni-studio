@@ -1,0 +1,93 @@
+# BlogStater Omni Studio (올인원 멀티 블로그 자동화 데스크톱)
+
+**Python을 일절 사용하지 않고 100% TypeScript + Electron + React + Playwright 기반으로 제작된 설치형 데스크톱 블로그 자동화 스튜디오**입니다.
+유료 종량제 API 키 없이도 사용자가 구독 중인 **ChatGPT Plus, Claude Pro, Google Gemini Pro, Perplexity Pro, DeepSeek** 웹 브라우저 세션을 그대로 연결해 고조회수 블로그 원고를 생성하고, **네이버 블로그 · 티스토리 · 워드프레스 · 벨로그 · 미디엄 · Ghost · GitHub Pages**까지 통합 관리합니다.
+
+---
+
+## 🚀 실행 방법
+
+### 1. 원클릭 실행 (빌드 완료 상태)
+- 폴더 내 [`start-studio.bat`](./start-studio.bat) 파일을 더블클릭하거나 터미널에서 아래 명령어를 실행하세요:
+```bash
+npm start
+```
+
+### 2. 실시간 개발 모드 실행 (UI 핫리로드 + Electron 동시 실행)
+```bash
+npm run dev
+```
+
+### 3. 윈도우 설치 파일(.exe) 패키징 빌드
+```bash
+npm run dist
+```
+
+---
+
+## 🔥 핵심 탑재 기능 (8대 올인원 모듈)
+
+1. **통합 대시보드 & 원클릭 자동 파이프라인 (`Dashboard`)**
+   - 운영 중인 모든 블로그의 누적 발행 수, 검수 대기 수, 예상 월간 조회수, 평균 SEO 점수(100점 만점)를 한눈에 파악합니다.
+   - **[선택 블로그 원클릭 자동 발행]** 버튼 하나로 `황금 키워드 발굴 → 구독형 AI 원고 작성 → 100점 SEO 최적화 → 썸네일 생성 → 발행/검수 대기` 전 과정을 자동으로 처리합니다.
+
+2. **멀티 블로그 & 페르소나 매니저 (`Multi-Blog & Persona`)**
+   - **지원 플랫폼**: 네이버 블로그(SmartEditor ONE), 티스토리, 워드프레스(REST API 및 브라우저 동시 지원), 벨로그, Medium, Ghost, GitHub Pages(Markdown).
+   - 블로그별 **핵심 주제(Niche Keywords)**, **전담 페르소나**(말투, 서론 후킹 공식, 금칙어, 고정 인사말/맺음말), **자동화 모드**(완전자동 `full_auto` / 반자동 검수 `semi_auto`), **Cron 예약 스케줄러**를 개별 설정합니다.
+
+3. **황금 키워드 & 실시간 트렌드 스카우트 (`Golden Keyword Scout`)**
+   - **네이버 실시간 자동완성 API**, **구글 자동완성 API**, **구글 트렌드 급상승 RSS**를 실시간 크롤링하여 블로그 주제와 결합된 세부 롱테일 키워드를 발굴합니다.
+   - 월간 예상 검색량, 경쟁 강도, 수익성(CPC), **Golden Score(0~100점)**를 자동 산출하고 **클릭률(CTR) 극대화 추천 제목 5선**을 즉시 제안합니다.
+
+4. **구독형 웹 AI 브라우저 세션 센터 (`Subscription Web AI Center`)**
+   - API 키 과금 없이 2026년 10월 현시점 최신 모델인 **ChatGPT Plus (`GPT-6.1 Sol / GPT-6 Astra`), Claude Pro (`Claude Sonnet 5.5 / Opus 5.5 / Fable 5.1`), Google Gemini Pro (`Gemini 4 Argon / 3.1 Pro`), Perplexity Pro (`Sonar Pro`), DeepSeek Web (`DeepSeek V4 / R2`), Local Ollama (`Llama 4 / Qwen 3.5 / Gemma 3`)**를 연동합니다.
+   - 전용 브라우저 창에서 한 번 로그인해 두면 영구 프로필(`userDataDir`)에 세션이 보존되어 자동 원고 생성에 활용되며, 세션 미연결 시에도 내장된 **하이브리드 SEO 구조화 합성 엔진**이 즉시 2,200자 이상의 고품질 원고를 생성합니다.
+
+5. **AI 포스팅 생성 & 실시간 100점 SEO 스튜디오 (`SEO Studio`)**
+   - 네이버 C-Rank / DIA+ 및 구글 추천 스니펫에 최적화된 **도입부 후킹 + 3줄 요약 박스 + H2/H3 체계적 목차 + 마크다운 비교표(Table) + 실전 체크리스트 + FAQ** 구조로 원고를 작성합니다.
+   - 우측 패널에서 **실시간 100점 만점 SEO 점수**, 공백 제외 글자수, 예상 체류시간(분/초), 키워드 밀도를 즉시 진단합니다.
+   - **[리치 HTML 복사]** 버튼을 누르면 표·인용구·소제목 디자인이 입혀진 HTML이 클립보드에 복사되어 네이버 스마트에디터 ONE이나 티스토리에 `Ctrl+V` 한 번으로 깔끔하게 붙여넣을 수 있습니다.
+
+6. **고클릭률(CTR) 썸네일 & 이미지 스튜디오 (`Thumbnail Canvas`)**
+   - HTML5 Canvas 엔진을 통해 네이버 정방형(`1:1`), 티스토리/워드프레스 와이드(`16:9`) 비율의 고해상도 썸네일을 즉시 생성하고 본문 최상단 및 로컬 발행 패키지에 자동 삽입합니다.
+
+7. **수익화(쿠팡파트너스·제휴 CPA) & 자동 내부링크 센터 (`Monetization`)**
+   - 포스팅 키워드와 매칭되는 쿠팡파트너스/제휴 상품을 본문 중간에 세련된 추천 박스로 자동 삽입하고 공정위 대가성 문구를 자동으로 표기합니다.
+   - 해당 블로그에 발행된 기존 글들을 문맥에 맞게 **자동 내부링크(Internal Linking)**로 엮어 블로그 지수와 체류시간을 동시에 끌어올립니다.
+
+8. **검수 대기열 & 로컬 패키지 아카이빙 (`Review Queue & Exporter`)**
+   - 모든 포스팅은 발행 시 `exports/` 폴더 하위에 날짜·플랫폼·키워드별로 `.md` (Frontmatter 포함), `.html` (리치 스타일 적용), `thumbnail.png` 세트로 자동 백업됩니다.
+
+---
+
+## 💻 지원 환경 및 설치 준비
+
+- **운영체제**: **Windows 10/11 우선 지원** (`start-studio.bat`, `electron-builder --win` 및 로컬 CLI 경로가 Windows 기준으로 최적화되어 있습니다.)
+- **런타임**: **Node.js 20+** 권장
+- **의존성 설치 및 실행**:
+
+```bash
+npm install
+npm start
+```
+
+---
+
+## ⚠️ 주의사항 및 면책 조항 (Disclaimer)
+
+- 본 프로젝트는 **개인 생산성 보조 및 학습 목적의 오픈소스 소프트웨어**입니다.
+- 연동되는 구독형 AI 서비스(ChatGPT, Claude, Gemini, Perplexity, DeepSeek 등) 및 블로그 플랫폼(네이버 블로그, 티스토리, 워드프레스 등)의 **이용약관(ToS) 준수와 계정 관리·운영 책임은 전적으로 사용자 본인**에게 있습니다.
+- 대량 스팸 발행, 어뷰징, 타인의 권리 침해 또는 각 플랫폼 정책에 위반되는 목적의 사용을 금지합니다.
+
+---
+
+## 🤝 기여 및 보안
+
+- 버그 제보, 웹 셀렉터 수정 및 PR 가이드는 [`CONTRIBUTING.md`](./CONTRIBUTING.md)를 참고하세요.
+- 브라우저 프로필, 쿠키, 토큰 등 민감 정보 취급 및 취약점 제보 절차는 [`SECURITY.md`](./SECURITY.md)를 참고하세요.
+
+---
+
+## 📄 라이선스
+
+이 프로젝트는 **MIT License** 하에 배포됩니다. 자세한 내용은 [`LICENSE`](./LICENSE) 파일을 참고하세요.
