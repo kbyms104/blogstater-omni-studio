@@ -15,10 +15,18 @@
     "tistory"
   ],
   "main": "dist-electron/main.js",
+  "homepage": "https://github.com/kbyms104/blogstater-omni-studio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbyms104/blogstater-omni-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kbyms104/blogstater-omni-studio/issues"
+  },
   "scripts": {
     "dev": "concurrently -k \"vite\" \"wait-on tcp:5173 && tsc -p tsconfig.electron.json && electron .\"",
     "build": "tsc -p tsconfig.electron.json && vite build",
-    "start": "tsc -p tsconfig.electron.json && electron .",
+    "start": "npm run build && electron .",
     "pack": "npm run build && electron-builder --dir",
     "dist": "npm run build && electron-builder --win portable nsis"
   },
