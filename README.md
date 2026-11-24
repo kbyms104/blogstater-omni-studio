@@ -13,7 +13,7 @@
 
 ---
 
-## 🚀 실행 방법
+## 실행 방법
 
 ### 1. 저장소 클론 및 원클릭 실행 (자동 빌드 후 실행)
 ```bash
@@ -36,7 +36,7 @@ npm run dist
 
 ---
 
-## 🔥 핵심 탑재 기능 (8대 올인원 모듈)
+## 핵심 탑재 기능 (8대 올인원 모듈)
 
 1. **통합 대시보드 & 원클릭 자동 파이프라인 (`Dashboard`)**
    - 운영 중인 모든 블로그의 누적 발행 수, 검수 대기 수, 예상 월간 조회수, 평균 SEO 점수(100점 만점)를 한눈에 파악합니다.
@@ -71,7 +71,7 @@ npm run dist
 
 ---
 
-## 💻 지원 환경 및 설치 준비
+## 지원 환경 및 설치 준비
 
 - **운영체제**: **Windows 10/11 우선 지원** (`start-studio.bat`, `electron-builder --win` 및 로컬 CLI 경로가 Windows 기준으로 최적화되어 있습니다.)
 - **런타임**: **Node.js 20+** 권장
@@ -82,7 +82,7 @@ npm install
 npm start
 ```
 
-### 🌐 블로그 자동 발행 엔진 (Aside 권장 / Playwright 대안)
+### 블로그 자동 발행 엔진 (Aside 권장 / Playwright 대안)
 
 - **기본 권장 엔진 — Aside 브라우저** ([aside.com](https://aside.com)):
   - 기본 설정(`browserAutomationEngine = 'aside'`)은 PC에 설치된 **Aside 브라우저 및 Aside CLI(`aside.exe`)** 를 통해 이미 로그인된 세션을 그대로 활용하여 네이버 블로그·티스토리 등에 자동 발행합니다.
@@ -94,12 +94,12 @@ npm start
     npx playwright install chromium
     ```
 
-### 🤖 AI 원고 생성 연동 옵션 (선택 사항)
+### AI 원고 생성 연동 옵션 (선택 사항)
 
 - **로컬 AI CLI 연동**: PC에 `agy` (Google Antigravity CLI), `codex`, `claude`, `gh`, `Ollama` 등이 설치되어 있으면 별도 API 키 입력 없이 바로 연결해 원고를 생성할 수 있습니다.
 - **구독형 웹 AI 브라우저 세션**: 위 CLI를 설치하지 않았더라도 앱 내 전용 브라우저 창에서 **ChatGPT Plus, Claude Pro, Google Gemini Pro, Perplexity Pro, DeepSeek** 웹 계정에 한 번 로그인하면 동일하게 원고를 생성할 수 있으며, 미연결 시에도 내장 하이브리드 엔진으로 초안 생성이 가능합니다.
 
-### 🧭 처음 실행 후 빠른 시작 (Quick Start)
+### 처음 실행 후 빠른 시작 (Quick Start)
 
 1. **블로그 프로필 등록**: `Multi-Blog & Persona` 메뉴에서 운영할 블로그 플랫폼·주제·페르소나를 등록합니다. *(처음에는 **반자동 검수 모드 `semi_auto`** 사용을 권장합니다.)*
 2. **AI 연동 확인**: `Subscription Web AI Center`에서 설치된 로컬 AI CLI(`agy`, `codex`, `claude`, `Ollama`)를 확인하거나, 구독 중인 웹 AI 서비스에 1회 로그인합니다.
@@ -108,7 +108,7 @@ npm start
 
 ---
 
-## ⚠️ 주의사항 및 면책 조항 (Disclaimer)
+## 주의사항 및 면책 조항 (Disclaimer)
 
 > [!CAUTION]
 > **계정 정지(밴)·저품질·차단 등 모든 제재에 대한 책임은 전적으로 사용자 본인에게 있습니다.**
@@ -121,7 +121,7 @@ npm start
 
 ---
 
-## 🔒 로컬 전용 & 개인정보 보호 (Local-First)
+## 로컬 전용 & 개인정보 보호 (Local-First)
 
 - **100% 로컬 저장**: 블로그 설정, 암호화된 계정 정보, 브라우저 세션 프로필(`userDataDir`), 발행 패키지 백업(`exports/`)은 모두 **사용자 PC 로컬에만 저장**됩니다.
 - **외부 수집 서버 없음**: 개발자나 제3자가 운영하는 별도 백엔드·텔레메트리·수집 서버로 사용자 계정 정보나 생성된 원고를 전송하지 않습니다.
@@ -129,7 +129,7 @@ npm start
 
 ---
 
-## ❓ 자주 묻는 질문 / 트러블슈팅 (FAQ)
+## 자주 묻는 질문 / 트러블슈팅 (FAQ)
 
 - **Q. "Aside 프로그램이 설치되어 있지 않습니다" 메시지가 뜹니다.**
   - [aside.com](https://aside.com)에서 Aside를 설치하거나, 앱 내 설정에서 자동화 엔진을 내장 **`Playwright`** 브라우저로 변경해 주세요.
@@ -142,7 +142,7 @@ npm start
 
 ---
 
-## 🗂️ 프로젝트 구조
+## 프로젝트 구조
 
 ```text
 blogstater-omni-studio/
@@ -167,13 +167,13 @@ blogstater-omni-studio/
 
 ---
 
-## 🤝 기여 및 보안
+## 기여 및 보안
 
 - 버그 제보, 웹 셀렉터 수정 및 PR 가이드는 [`CONTRIBUTING.md`](./CONTRIBUTING.md)를 참고하세요.
 - 브라우저 프로필, 쿠키, 토큰 등 민감 정보 취급 및 취약점 제보 절차는 [`SECURITY.md`](./SECURITY.md)를 참고하세요.
 
 ---
 
-## 📄 라이선스
+## 라이선스
 
 이 프로젝트는 **MIT License** 하에 배포됩니다. 자세한 내용은 [`LICENSE`](./LICENSE) 파일을 참고하세요.
